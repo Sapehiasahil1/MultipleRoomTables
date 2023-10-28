@@ -4,7 +4,7 @@ import androidx.room.Embedded
 import androidx.room.Relation
 import com.example.multipleroomtables.entities.Director
 import com.example.multipleroomtables.entities.School
-
+// Representing ONE to ONE relation.
 data class SchoolAndDirector(
     // The Embedded annotation assures that the school entities fields are inserted in the SchoolAndDirector class.
     @Embedded val school: School,
