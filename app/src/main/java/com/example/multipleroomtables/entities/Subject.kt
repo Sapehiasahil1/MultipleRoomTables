@@ -4,9 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Student(
+data class Subject(
     @PrimaryKey(autoGenerate = false)
-    val studentName: String,
-    val semester: Int,
-    val schoolName: String // This represents the primary key of the school table.
+    val subjectName: String
 )
